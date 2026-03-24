@@ -99,9 +99,15 @@ const PaymentSummaryPage = () => {
 
         {/* Bottom button area */}
         <div className="mt-6">
-          <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
-            Go to Google Form
-          </button>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeFXvfvjXZJXGDrz4aTYOG4-Whd44Ysh2uGb0BhofzZvEGDMg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
+              Go to Google Form
+            </button>
+          </a>
         </div>
       </div>
     </div>
