@@ -10,7 +10,7 @@ const PaymentSummaryPage = () => {
   if (!student) {
     return (
       <div className="p-10 text-center text-red-600">
-        No student found. Please login first.
+        Tiada data pelajar ditemukan. Sila log masuk terlebih dahulu.
       </div>
     );
   }
@@ -20,11 +20,11 @@ const PaymentSummaryPage = () => {
       <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-8">
         {/* Student Info */}
         <div className="mb-6">
-          <h1 className="text-2xl font-bold mb-4">Payment Summary</h1>
+          <h1 className="text-2xl font-bold mb-4">Ringkasan Pembayaran</h1>
 
           <div className="text-gray-700 space-y-1">
             <div>
-              <span className="inline-block w-24 font-semibold">Name</span> :{" "}
+              <span className="inline-block w-24 font-semibold">Nama</span> :{" "}
               {student.name}
             </div>
             <div>
@@ -39,11 +39,11 @@ const PaymentSummaryPage = () => {
           <table className="w-full border border-gray-300 rounded-lg">
             <thead className="bg-blue-500 text-white">
               <tr>
-                <th className="py-2 px-4 border">Month</th>
-                <th className="py-2 px-4 border">Year</th>
-                <th className="py-2 px-4 border">Paid Amount</th>
-                <th className="py-2 px-4 border">Due Amount</th>
-                <th className="py-2 px-4 border">Outstanding Amount</th>
+                <th className="py-2 px-4 border">Bulan</th>
+                <th className="py-2 px-4 border">Tahun</th>
+                <th className="py-2 px-4 border">Jumlah Dibayar</th>
+                <th className="py-2 px-4 border">Jumlah Harus Bayar</th>
+                <th className="py-2 px-4 border">Jumlah Tertunggak</th>
                 <th className="py-2 px-4 border">Status</th>
               </tr>
             </thead>
@@ -84,13 +84,17 @@ const PaymentSummaryPage = () => {
         {/* Total Summary */}
         <div className="flex justify-between bg-gray-100 p-4 rounded-lg shadow-inner">
           <div>
-            <p className="text-gray-700 font-semibold">Total Due Amount:</p>
+            <p className="text-gray-700 font-semibold">
+              Jumlah Keseluruhan Harus Dibayar:
+            </p>
             <p className="text-lg font-bold text-blue-600">
               RM {student.totalDue.toFixed(2)}
             </p>
           </div>
           <div>
-            <p className="text-gray-700 font-semibold">Total Outstanding:</p>
+            <p className="text-gray-700 font-semibold">
+              Jumlah Keseluruhan Tertunggak:
+            </p>
             <p className="text-lg font-bold text-red-600">
               RM {student.totalOutstanding.toFixed(2)}
             </p>
@@ -105,7 +109,7 @@ const PaymentSummaryPage = () => {
             rel="noopener noreferrer"
           >
             <button className="bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 transition">
-              Go to Google Form
+              Pergi ke Google Form
             </button>
           </a>
         </div>
