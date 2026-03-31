@@ -104,7 +104,7 @@ const PaymentSummaryPage = () => {
         {/* Bottom button area */}
         <div className="mt-6">
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeFXvfvjXZJXGDrz4aTYOG4-Whd44Ysh2uGb0BhofzZvEGDMg/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdP3aN3HCEybSRlZYvW5NSHfS1ydKn9Ol1niKXHkO9YKxHonA/viewform?usp=publish-editor"
             target="_blank"
             rel="noopener noreferrer"
           >
